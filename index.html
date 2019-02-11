@@ -1,0 +1,29 @@
+<!-- Créer un formulaire demandant le nom, le prénom, la date de naissance, le lieu de naissance, l'emploi et la société.
+Créer un bouton "Générer" permettant de créer une courte phrase de présentation.
+
+Exemple : Si les données saisies sont : "Jérôme OTT, 5/06/1990, Margny-lès-Compiègne, Formateur, Novei", la phrase de présentation sera :
+"Jérôme OTT, né le 5/06/1990 à Margny-lès-Compiègne, actuellement Formateur à Novei
+-->
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <ol>
+      <li><label for="#firstname">Nom :</label><input type="text" name="firstname" id="firstname" /></li>
+      <li><label for="#lastname">Prénom :</label><input type="text" name="lastname" id="lastname" /></li>
+      <li><label for="#dateOfBirth">Date de naissance :</label><input type="text" name="dateOfBirth" id="dateOfBirth" /></li>
+      <li><label for="#placeOfBirth">Lieu de naissance :</label><input type="text" name="placeOfBirth" id="placeOfBirth" /></li>
+      <li><label for="#work">Emploi :</label><input type="text" name="work" id="work" /></li>
+      <li><label for="#nameSociete">Nom de société :</label><input type="text" name="nameSociete" id="nameSociete" /></li>
+    </ol>
+  </form>
+  <button name="submit" id="submit">Envoyer</button>
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
