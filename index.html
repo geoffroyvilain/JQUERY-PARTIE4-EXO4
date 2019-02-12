@@ -13,16 +13,16 @@ Exemple : Si les données saisies sont : "Jérôme OTT, 5/06/1990, Margny-lès-C
 </head>
 <body>
   <form>
-    <ol>
-      <li><label for="#firstname">Nom :</label><input type="text" name="firstname" id="firstname" /></li>
-      <li><label for="#lastname">Prénom :</label><input type="text" name="lastname" id="lastname" /></li>
-      <li><label for="#dateOfBirth">Date de naissance :</label><input type="text" name="dateOfBirth" id="dateOfBirth" /></li>
-      <li><label for="#placeOfBirth">Lieu de naissance :</label><input type="text" name="placeOfBirth" id="placeOfBirth" /></li>
+    <ol> <!-- REQUIRED : SI PAS REMPLI, ON NE PEUT VALIDER LA PAGE --  AUTOFOCUS : SE MET SUR LE 1ER CHAMP A REMPLIR AU CHARGEMENT -->
+      <li><label for="#firstname">Nom :</label><input type="text" name="firstname" id="firstname" autofocus required /></li>
+      <li><label for="#lastname">Prénom :</label><input type="text" name="lastname" id="lastname" required /></li>
+      <li><label for="#birthDate">Date de naissance :</label><input type="text" name="birthDate" id="birthDate" required /></li>
+      <li><label for="#birthPlace">Lieu de naissance :</label><input type="text" name="birthPlace" id="birthPlace" required /></li>
       <li><label for="#work">Emploi :</label><input type="text" name="work" id="work" /></li>
-      <li><label for="#nameSociete">Nom de société :</label><input type="text" name="nameSociete" id="nameSociete" /></li>
+      <li><label for="#nameSociete">Nom de société :</label><input type="text" name="nameSociete" id="nameSociete" required /></li>
     </ol>
   </form>
-  <button name="submit" id="submit">Envoyer</button>
+  <button name="submit" id="submit">Générer</button>
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
